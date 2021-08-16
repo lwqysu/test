@@ -57,7 +57,7 @@
         "width": 180,
         "height": 40
       },
-      "javaMethodContent": "sysout(\"master\")",
+      "javaMethodContent": "sysout(\"合并\")",
       "out": [
         {
           "caption": "正常出口",
