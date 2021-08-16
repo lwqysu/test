@@ -1,0 +1,77 @@
+{
+  "start": "0",
+  "caption": "",
+  "geometry": {
+    "x": 280,
+    "y": 60
+  },
+  "fileDescription": {
+    "author": "",
+    "function": "",
+    "remark": ""
+  },
+  "logLevel": "info",
+  "logEnabled": true,
+  "inArgs": {
+    "arg": []
+  },
+  "outArgs": {
+    "arg": []
+  },
+  "internalVars": {
+    "arg": []
+  },
+  "endstep": {
+    "id": "1000",
+    "geometry": {
+      "x": 260,
+      "y": 580
+    },
+    "in": [
+      {
+        "caption": "正常出口",
+        "name": "正常出口",
+        "id": "1"
+      }
+    ]
+  },
+  "end": [
+    {
+      "caption": "正常出口",
+      "name": "正常出口",
+      "id": "1001"
+    }
+  ],
+  "lfc": [],
+  "csd": [],
+  "component": [],
+  "steps": [
+    {
+      "id": "1",
+      "caption": "STEP",
+      "name": "STEP",
+      "showId": "1",
+      "geometry": {
+        "x": 260,
+        "y": 210,
+        "width": 180,
+        "height": 40
+      },
+      "javaMethodContent": "sysout(\"123\")",
+      "out": [
+        {
+          "caption": "正常出口",
+          "name": "success",
+          "id": "1",
+          "next": ""
+        }
+      ],
+      "exception": {
+        "name": "",
+        "next": ""
+      }
+    }
+  ],
+  "java": [],
+  "lanes": []
+}
