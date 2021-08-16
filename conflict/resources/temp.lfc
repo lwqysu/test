@@ -1,0 +1,231 @@
+{
+  "start": "6",
+  "exceptionProxy": "5",
+  "caption": "核心通讯",
+  "geometry": {
+    "x": 250,
+    "y": 60
+  },
+  "fileDescription": {
+    "author": "",
+    "function": "",
+    "remark": ""
+  },
+  "logLevel": "info",
+  "inArgs": {
+    "arg": []
+  },
+  "outArgs": {
+    "arg": []
+  },
+  "internalVars": {
+    "arg": []
+  },
+  "endstep": {
+    "id": "1000",
+    "geometry": {
+      "x": 250,
+      "y": 460
+    },
+    "in": [
+      {
+        "caption": "正常出口",
+        "name": "正常出口",
+        "id": "1"
+      }
+    ]
+  },
+  "end": [
+    {
+      "caption": "正常出口",
+      "name": "正常出口",
+      "id": "1001"
+    }
+  ],
+  "lfc": [
+    {
+      "id": "5",
+      "caption": "公共异常处理",
+      "name": "LFC",
+      "showId": "2",
+      "geometry": {
+        "x": 30,
+        "y": 240,
+        "width": 180,
+        "height": 40
+      },
+      "runType": "sync",
+      "timeout": 0,
+      "out": [
+        {
+          "caption": "正常出口",
+          "name": "正常出口",
+          "id": "1",
+          "next": "1001"
+        }
+      ],
+      "inArgs": {
+        "arg": [
+          {
+            "name": "errorCode",
+            "type": "String",
+            "description": "错误码",
+            "example": "",
+            "value": "varMap()._errorCode"
+          },
+          {
+            "name": "errorMessage",
+            "type": "String",
+            "description": "错误信息",
+            "example": "",
+            "value": "varMap()._errorMsg"
+          }
+        ]
+      },
+      "outArgs": {
+        "arg": []
+      },
+      "lfcPath": "/FCServer/business/ib/PublicPkg/PublicExceptionFlow.lfc",
+      "fileDescription": {
+        "author": "",
+        "function": "",
+        "remark": ""
+      },
+      "exception": {
+        "name": "",
+        "next": ""
+      }
+    },
+    {
+      "id": "6",
+      "caption": "公共接入处理",
+      "name": "LFC",
+      "showId": "1",
+      "geometry": {
+        "x": 230,
+        "y": 170,
+        "width": 180,
+        "height": 40
+      },
+      "runType": "sync",
+      "timeout": 0,
+      "out": [
+        {
+          "caption": "正常出口",
+          "name": "正常出口",
+          "id": "1",
+          "next": "8"
+        },
+        {
+          "caption": "失败出口",
+          "name": "失败出口",
+          "id": "2",
+          "next": "7"
+        }
+      ],
+      "inArgs": {
+        "arg": []
+      },
+      "outArgs": {
+        "arg": []
+      },
+      "lfcPath": "/FCServer/business/ib/PublicPkg/PublicAccessFlow.lfc",
+      "fileDescription": {
+        "author": "",
+        "function": "",
+        "remark": ""
+      },
+      "exception": {
+        "name": "",
+        "next": ""
+      }
+    },
+    {
+      "id": "7",
+      "caption": "公共接出处理",
+      "name": "LFC",
+      "showId": "4",
+      "geometry": {
+        "x": 230,
+        "y": 340,
+        "width": 180,
+        "height": 40
+      },
+      "runType": "sync",
+      "timeout": 0,
+      "out": [
+        {
+          "caption": "正常出口",
+          "name": "正常出口",
+          "id": "1",
+          "next": "1001"
+        }
+      ],
+      "inArgs": {
+        "arg": []
+      },
+      "outArgs": {
+        "arg": []
+      },
+      "lfcPath": "/FCServer/business/ib/PublicPkg/PublicExitFlow.lfc",
+      "fileDescription": {
+        "author": "",
+        "function": "",
+        "remark": ""
+      },
+      "exception": {
+        "name": "",
+        "next": ""
+      }
+    },
+    {
+      "id": "8",
+      "caption": "LFC",
+      "name": "LFC",
+      "showId": "3",
+      "geometry": {
+        "x": 230,
+        "y": 260,
+        "width": 180,
+        "height": 40
+      },
+      "runType": "sync",
+      "timeout": 0,
+      "out": [
+        {
+          "caption": "正常出口",
+          "name": "正常出口",
+          "id": "1",
+          "next": "7"
+        }
+      ],
+      "inArgs": {
+        "arg": [
+          {
+            "name": "CommCode",
+            "type": "String",
+            "description": "通讯码",
+            "example": "",
+            "value": "request().CommCode"
+          }
+        ]
+      },
+      "outArgs": {
+        "arg": []
+      },
+      "lfcPath": "/FCServer/business/ib/baffle/coreBaffle.lfc",
+      "fileDescription": {
+        "author": "",
+        "function": "",
+        "remark": ""
+      },
+      "exception": {
+        "name": "",
+        "next": ""
+      }
+    }
+  ],
+  "csd": [],
+  "component": [],
+  "lanes": []
+}
