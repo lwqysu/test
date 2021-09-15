@@ -23,6 +23,7 @@ public class 测试 extends AbstractLFC
 	@Step(name = "start")
 	public Future start() throws IOException
 	{
+		System.out.println("ffff");
 		return Future.SUCCESS;
 	}
 
