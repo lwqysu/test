@@ -1,0 +1,14 @@
+{
+  "name": "ABXProject",
+  "author": "agree",
+  "version": "1.0.0",
+  "type": "Module",
+  "style": [],
+  "moduleDependencies": {},
+  "dependencies": {},
+  "abx": {
+    "pages": {
+      "externals": {}
+    }
+  }
+}
