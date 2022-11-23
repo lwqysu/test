@@ -1,0 +1,19 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "是否存在纸质凭证": {
+      "isArray": "false",
+      "type": ""
+    },
+    "是否存在电子凭证": {
+      "isArray": "false",
+      "type": ""
+    },
+    "是否存在重空": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

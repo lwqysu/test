@@ -1,0 +1,233 @@
+{
+  "name": "代理人",
+  "description": "选择是否代理人，并录入代理人信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "证件类型",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "居民身份证", "value": "1" },
+          { "label": "临时身份证", "value": "2" },
+          { "label": "户口薄", "value": "3" },
+          { "label": "中国护照", "value": "4" },
+          { "label": "外国护照", "value": "5" },
+          { "label": "港澳居民来往内地通行证", "value": "6" },
+          { "label": "港澳居民居住证", "value": "7" },
+          { "label": "台湾居民来往大陆通行证", "value": "8" },
+          { "label": "台湾居民居住证", "value": "9" },
+          { "label": "武警士兵证", "value": "10" },
+          { "label": "军官证", "value": "11" },
+          { "label": "外国人永久居留身份证", "value": "12" }
+        ]
+      },
+      "inputControl": [
+        {
+          "label": "当证件类型为可读证件时，调用证件阅读仪读取证件信息，并根据所读的信息回显：证件号码、姓名、性别、证件有效期（开始）、证件有效期（截止）、国籍、联系地址（采用证件中的地址，可根据地址中关键字进行截取后回显至省、市、区、详细地址）",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "证件号码",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "姓名",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        {
+          "label": "焦点离开后：根据代理人、经办人的证件类型、证件号码、证件名称进行名单检查（行外），当命中名单时，进行提示，提示确认后，交易继续",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "性别",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "男", "value": "1" },
+          { "label": "女", "value": "2" }
+        ]
+      },
+      "inputControl": [{ "label": "代理人要求为9要素时必输", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "证件有效期",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": [
+        { "label": "代理人要求为9要素时必输", "value": 1 },
+        { "label": "证件更新时系统自动更新证件有效日期", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "证件失效日期",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": [
+        { "label": "代理人要求为9要素时必输", "value": 1 },
+        { "label": "证件更新时系统自动更新证件有效日期", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "职业",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "代理人要求为9要素时必输", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "联系电话",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "数字，10-12位", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "联系地址",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "代理关系-对私",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "直系亲属（配偶、子女、父母）", "value": "1" },
+          { "label": "旁系亲属", "value": "2" },
+          { "label": "同事", "value": "3" },
+          { "label": "同学", "value": "4" },
+          { "label": "朋友", "value": "5" },
+          { "label": "其他", "value": "6" }
+        ]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "代理关系",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "代理关系为其他时，必输", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "代理原因",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "存款人死亡，代理人持合法文书", "value": "1" },
+          { "label": "存款人委托他人办理，提供《XXX银行个人业务代理关系真实性核查表》", "value": "2" },
+          { "label": "存款人意识不清，代理人持合法文书", "value": "3" },
+          { "label": "普通代理（默认）", "value": "4" },
+          { "label": "其他，自行录入信息", "value": "5" }
+        ]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "代理原因",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "代理原因为其他时，必输；", "value": 1 }]
+    },
+    {
+      "type": "container",
+      "component": "button-group",
+      "data": {
+        "label": "按钮组"
+      },
+      "inputControl": [],
+      "children": [
+        {
+          "type": "widget",
+          "component": "button",
+          "data": {
+            "label": "取消",
+            "layoutData": 2,
+            "type": "text"
+          },
+          "inputControl": []
+        },
+        {
+          "type": "widget",
+          "component": "button",
+          "data": {
+            "label": "确认",
+            "layoutData": 2,
+            "type": "primary"
+          },
+          "inputControl": []
+        }
+      ]
+    }
+  ]
+}

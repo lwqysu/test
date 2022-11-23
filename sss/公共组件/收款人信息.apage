@@ -1,0 +1,96 @@
+{
+  "name": "收款人信息",
+  "description": "选择收款人行名行号，录入收款人姓名、账号，选择到账时间",
+  "children": [
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "收款人账号",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "首尾不允许录入空格。", "value": 1 },
+        { "label": "只能输入数字。", "value": 2 },
+        { "label": "字符数：XXX。", "value": 3 },
+        { "label": "不可仅录入0000、1111。", "value": 4 },
+        { "label": "如不符，提示“收款人账号录入有误，请重新录入。", "value": 5 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "户名",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "收款行名称",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "可自行录入也可通过收款行查询后选择其中一个收款行", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "button",
+      "data": {
+        "label": "收款行查询",
+        "layoutData": 2,
+        "type": "text"
+      },
+      "inputControl": [{ "label": "点击按钮后弹窗展示收款行列表", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "收款人风险等级",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [
+        {
+          "label": "该客户如在我行建立过客户信息，输入收款人账号后回显收款人风险等级，如未建立客户信息该字段隐藏",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "到账时间",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          {
+            "label": "实时",
+            "value": "1"
+          },
+          {
+            "label": "2小时内",
+            "value": "2"
+          }
+        ]
+      },
+      "inputControl": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "是否降级读取介质": {
+      "isArray": "false",
+      "type": ""
+    },
+    "是否代理模式": {
+      "isArray": "false",
+      "type": ""
+    },
+    "代理人类型": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

@@ -1,0 +1,19 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "币种": {
+      "isArray": "false",
+      "type": ""
+    },
+    "金额": {
+      "isArray": "false",
+      "type": ""
+    },
+    "取款日期": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

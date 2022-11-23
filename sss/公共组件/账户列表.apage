@@ -1,0 +1,132 @@
+{
+  "name": "账户列表",
+  "description": "显示客户名下所有账户信息及账户余额、状态等",
+  "children": [
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账号/子序号序号",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "根据读取或选择的账户回显账户信息及账户下的子账户信息", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "户名",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "开户支行",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "开户日期",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "介质类型",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户状态",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "币种",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "余额",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "可用余额",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "起息日",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "到期日",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "揽存人信息",
+  "description": "录入揽存人工号及揽存人姓名",
+  "children": [
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "揽存人工号",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "可使用逗号分隔", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "揽存人所属机构",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "柜员手动选择", "value": 1 }]
+    }
+  ]
+}

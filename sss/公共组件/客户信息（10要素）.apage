@@ -1,0 +1,215 @@
+{
+  "name": "客户信息（10要素）",
+  "description": "显示客户关键要素信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "证件类型",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "居民身份证", "value": "1" },
+          { "label": "临时身份证", "value": "2" },
+          { "label": "户口薄", "value": "3" },
+          { "label": "中国护照", "value": "4" },
+          { "label": "外国护照", "value": "5" },
+          { "label": "港澳居民来往内地通行证", "value": "6" },
+          { "label": "港澳居民居住证", "value": "7" },
+          { "label": "台湾居民来往大陆通行证", "value": "8" },
+          { "label": "台湾居民居住证", "value": "9" },
+          { "label": "武警士兵证", "value": "10" },
+          { "label": "军官证", "value": "11" },
+          { "label": "外国人永久居留身份证", "value": "12" }
+        ]
+      },
+      "inputControl": [
+        { "label": "可读证件的情况下，读取证件后回显", "value": 1 },
+        { "label": "不可读证件的情况下，手动选择", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "证件号码",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "可读证件的情况下，读取证件后回显", "value": 1 },
+        { "label": "不可读证件的情况下，手动选择", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "姓名",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "可读证件的情况下，读取证件后回显", "value": 1 },
+        { "label": "不可读证件的情况下，手动选择", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "性别",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "男", "value": "1" },
+          { "label": "女", "value": "2" }
+        ]
+      },
+      "inputControl": [
+        { "label": "可读证件的情况下，读取证件后回显", "value": 1 },
+        { "label": "不可读证件的情况下，手动选择", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "证件生效效期",
+        "layoutData": 2,
+        "required": false
+      },
+      "inputControl": [
+        { "label": "可读证件的情况下，读取证件后回显", "value": 1 },
+        { "label": "不可读证件的情况下，手动选择", "value": 2 },
+        { "label": "证件为长期有效证件则无需填写该字段", "value": 3 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "证件失效日期",
+        "layoutData": 2,
+        "required": false
+      },
+      "inputControl": [
+        { "label": "可读证件的情况下，读取证件后回显", "value": 1 },
+        { "label": "不可读证件的情况下，手动选择", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "职业",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "国籍",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "联系电话",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "数字，10-12位", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "button",
+      "data": {
+        "label": "获取验证码",
+        "layoutData": 2,
+        "type": "primary"
+      },
+      "inputControl": [
+        { "label": "未获取验证码的状态下可点击该按钮", "value": 1 },
+        { "label": "已获取验证码未到60S的情况下按钮置灰不可点击，60S后可再次获取验证码", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "输入验证码",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "校验验证码的正确性", "value": 1 },
+        { "label": "校验验证码是否过期，过期则需要重新获取", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "联系地址",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "container",
+      "component": "button-group",
+      "data": {
+        "label": "按钮组"
+      },
+      "inputControl": [],
+      "children": [
+        {
+          "type": "widget",
+          "component": "button",
+          "data": {
+            "label": "确认",
+            "layoutData": 2,
+            "type": "primary"
+          },
+          "inputControl": []
+        },
+        {
+          "type": "widget",
+          "component": "button",
+          "data": {
+            "label": "取消",
+            "layoutData": 2,
+            "type": "text"
+          },
+          "inputControl": []
+        }
+      ]
+    }
+  ]
+}

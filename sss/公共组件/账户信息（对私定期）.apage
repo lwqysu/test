@@ -1,0 +1,210 @@
+{
+  "name": "账户信息（对私定期）",
+  "description": "显示账号、户名等个人定期账户信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "录入方式",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "磁条输入", "value": "0" },
+          { "label": "芯片输入", "value": "1" },
+          { "label": "手工输入", "value": "2" },
+          { "label": "芯片非接触式输入", "value": "3" },
+          { "label": "存单输入", "value": "4" }
+        ]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账号/子序号",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "当录入方式为1-接触、2-非接触、3-读取磁条时，若不能回显账号的，则拒绝交易并提示。", "value": 1 },
+        { "label": "根据交易配置校验账户类型", "value": 2 },
+        { "label": "根据交易配置校验账户状态", "value": 3 },
+        { "label": "校验黑名单", "value": 4 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "户名",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "介质类型",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "银行卡", "value": "1" },
+          { "label": "存折", "value": "2" },
+          { "label": "存单", "value": "3" },
+          { "label": "无介质", "value": "4" }
+        ]
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户种类",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "Ⅰ类户", "value": "1" },
+          { "label": "Ⅱ类户", "value": "2" },
+          { "label": "虚拟账户", "value": "3" }
+        ]
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "开户金额",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账户余额",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户状态",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "币种",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "起息日",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "到期日",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "存款期",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [{ "label": "下拉框内容根据行里实际情况展示", "value": "1" }]
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "存款种类",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [{ "label": "下拉框内容根据行里实际情况展示", "value": "1" }]
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "通兑标志",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "开户机构通兑", "value": "1" },
+          { "label": "分行通兑", "value": "2" },
+          { "label": "全行通兑", "value": "3" }
+        ]
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "转存标志",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "开户机构通存", "value": "1" },
+          { "label": "分行通存", "value": "2" },
+          { "label": "全行通存", "value": "3" }
+        ]
+      },
+      "inputControl": [{ "label": "根据账号/子序号回显", "value": 1 }]
+    }
+  ]
+}

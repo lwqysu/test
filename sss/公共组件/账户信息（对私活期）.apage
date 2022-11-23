@@ -1,0 +1,163 @@
+{
+  "name": "账户信息（对私活期）",
+  "description": "显示账号、户名等个人活期账户信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "录入方式",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "接触", "value": "1" },
+          { "label": "非接触", "value": "2" },
+          { "label": "读取词条", "value": "3" },
+          { "label": "手工输入", "value": "4" }
+        ]
+      },
+      "inputControl": [
+        {
+          "label": "选择1-接触、2-非接触、3-读取磁条时，账号、账户名称回显、禁输，手机号、开户行、凭证号码隐藏。",
+          "value": 1
+        },
+        { "label": "选择4-手工输入时，账号必输，账户名称回显、禁输", "value": 2 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账号/子序号",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "当录入方式为1-接触、2-非接触、3-读取磁条时，若不能回显账号的，则拒绝交易并提示。", "value": 1 },
+        { "label": "根据交易配置校验账户类型", "value": 2 },
+        { "label": "根据交易配置校验账户状态", "value": 3 },
+        { "label": "校验黑名单", "value": 4 },
+        { "label": "为存折账户时，回显凭证号码，否则凭证号码隐藏", "value": 5 },
+        { "label": "如果为行内账户，凭证密码已被锁定，提示柜员密码已锁定，请先解锁", "value": 6 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "户名",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "开户日期",
+        "layoutData": 2,
+        "required": false
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "开户支行",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "介质类型",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "银行卡", "value": "1" },
+          { "label": "存折", "value": "2" },
+          { "label": "存单", "value": "3" },
+          { "label": "无介质", "value": "4" }
+        ]
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户种类",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "Ⅰ类户", "value": "1" },
+          { "label": "Ⅱ类户", "value": "2" },
+          { "label": "虚拟账户", "value": "3" }
+        ]
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户状态",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "币种",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账户余额",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账户可用余额",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    }
+  ]
+}

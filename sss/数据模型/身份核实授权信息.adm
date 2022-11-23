@@ -1,0 +1,15 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "授权结果": {
+      "isArray": "false",
+      "type": ""
+    },
+    "授权柜员号": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

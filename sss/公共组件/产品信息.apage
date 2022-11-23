@@ -1,0 +1,225 @@
+{
+  "name": "产品信息",
+  "description": "显示产品编号、产品名称等产品关键信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "账号",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "户名",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户属性",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "根据账号回显", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "账户种类",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "通存标志",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "开户机构通存", "value": "1" },
+          { "label": "分行通存", "value": "2" },
+          { "label": "全行通存", "value": "3" }
+        ]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "通兑标志",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "开户机构通兑", "value": "1" },
+          { "label": "分行通兑", "value": "2" },
+          { "label": "全行通兑", "value": "3" }
+        ]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "产品名称",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "存期",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "起存日期",
+        "layoutData": 2,
+        "required": false
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "到期日期",
+        "layoutData": 2,
+        "required": false
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "金额",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "number"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "利率",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "是否自动扣款",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "是", "value": "1" },
+          { "label": "否", "value": "2" }
+        ]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "自动扣款帐户",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "在自动扣款选是的情况下，该字段必填", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "计息标志",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "周期按季付息", "value": "1" },
+          { "label": "周期按月付息", "value": "2" },
+          { "label": "周期按半年付息", "value": "3" },
+          { "label": "周期按年付息", "value": "4" },
+          { "label": "按月付息", "value": "5" },
+          { "label": "按季付息", "value": "6" },
+          { "label": "按半年付息", "value": "7" },
+          { "label": "按年付息", "value": "8" },
+          { "label": "到期付息", "value": "9" }
+        ]
+      },
+      "inputControl": [{ "label": "根据核心查询返回结果进行回显，不可修改", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "转存方式",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "不转存", "value": "1" },
+          { "label": "本金续存", "value": "2" },
+          { "label": "本息续存", "value": "3" },
+          { "label": "转入其它账号", "value": "4" }
+        ]
+      },
+      "inputControl": [
+        { "label": "账户为定期时，该组字段显示，其他情况下隐藏，根据子账户信息查询回显", "value": 1 },
+        { "label": "凭证类型为存单时不可选为4-转入其他账号；", "value": 2 },
+        { "label": "产品为通知存款、零存整取时默认转存方式为-不续存，不可修改；", "value": 3 },
+        { "label": "电子存单时仅可选1-不转存、3-本息续存；", "value": 4 }
+      ]
+    }
+  ]
+}

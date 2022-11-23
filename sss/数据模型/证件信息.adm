@@ -1,0 +1,39 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "证件类型": {
+      "isArray": "false",
+      "type": ""
+    },
+    "证件号码": {
+      "isArray": "false",
+      "type": ""
+    },
+    "姓名": {
+      "isArray": "false",
+      "type": ""
+    },
+    "国籍": {
+      "isArray": "false",
+      "type": ""
+    },
+    "民族": {
+      "isArray": "false",
+      "type": ""
+    },
+    "证件起始有效期": {
+      "isArray": "false",
+      "type": ""
+    },
+    "证件截止有效期": {
+      "isArray": "false",
+      "type": ""
+    },
+    "发证机关": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

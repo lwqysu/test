@@ -1,0 +1,35 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "账号": {
+      "isArray": "false",
+      "type": ""
+    },
+    "账户名称": {
+      "isArray": "false",
+      "type": ""
+    },
+    "账户分类": {
+      "isArray": "false",
+      "type": ""
+    },
+    "账户属性": {
+      "isArray": "false",
+      "type": ""
+    },
+    "余额": {
+      "isArray": "false",
+      "type": ""
+    },
+    "可用余额": {
+      "isArray": "false",
+      "type": ""
+    },
+    "支付方式": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

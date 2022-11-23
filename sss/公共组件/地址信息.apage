@@ -1,0 +1,61 @@
+{
+  "name": "地址信息",
+  "description": "联动选择国家、省、市、区、县信息，并录入详细地址信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "省",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [{ "label": "根据地区表展示", "value": "1" }]
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "市",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [{ "label": "根据地区表展示", "value": "1" }]
+      },
+      "inputControl": [{ "label": "选择省份后，市下拉框可选择该省份下辖的所有地级市", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "区（县）",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [{ "label": "根据地区表展示", "value": "1" }]
+      },
+      "inputControl": [{ "label": "选择市后，区（县）可选择该市下辖的所有区和县级市", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "详细地址",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "首尾不允许录入空格。", "value": 1 },
+        { "label": "至少包含一个汉字/字母。", "value": 2 },
+        { "label": "字符数：10-100。", "value": 3 },
+        { "label": "不可仅录入无、没有、不知道、未知。", "value": 4 },
+        { "label": "如不符，提示“联系地址录入有误，请重新录入。", "value": 5 },
+        { "label": "省或者市前面填写的不为北京的，提示“请引导客户留存北京常住地址，以利于客户风险识别。”", "value": 6 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "行名行号",
+  "description": "录入行名或行号进行检索，从检索列表中选择一条信息",
+  "children": [
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "收款行行号",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        { "label": "可自行录入也可通过收款行查询后选择其中一个收款行", "value": 1 },
+        { "label": "首尾不允许录入空格", "value": 2 },
+        { "label": "只能输入数字", "value": 3 },
+        { "label": "字符数：XXX", "value": 4 },
+        { "label": "不可仅录入0000、1111", "value": 5 },
+        { "label": "字符长度超过限制提示：您录入的字符长度超过限制", "value": 6 }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "button",
+      "data": {
+        "label": "收款行行号查询",
+        "layoutData": 2,
+        "type": "text"
+      },
+      "inputControl": [{ "label": "点击按钮后弹窗展示收款行列表", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "date",
+      "data": {
+        "label": "收款行行名",
+        "layoutData": 2,
+        "required": true
+      },
+      "inputControl": []
+    }
+  ]
+}

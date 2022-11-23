@@ -1,0 +1,20 @@
+{
+  "name": "翻页",
+  "description": "可选择跳转至首页、尾页、上一页、下一页、或指定页数，可设置每页显示的信息条数",
+  "children": [
+    {
+      "type": "widget",
+      "component": "pagination",
+      "data": {
+        "label": "分页",
+        "layoutData": 2,
+        "page-size": "",
+        "total": "",
+        "page-count": "",
+        "layout": "",
+        "page-sizes": ""
+      },
+      "inputControl": [{ "label": "见文档", "value": 1 }]
+    }
+  ]
+}

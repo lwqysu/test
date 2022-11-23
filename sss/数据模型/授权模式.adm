@@ -1,0 +1,22 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "授权模式": {
+      "isArray": "false",
+      "type": ""
+    },
+    "授权柜员级别": {
+      "isArray": "false",
+      "type": ""
+    },
+    "授权原因": {
+      "isArray": "false",
+      "type": ""
+    },
+    "授权要点": {
+      "isArray": "false",
+      "type": ""
+    }
+  }
+}

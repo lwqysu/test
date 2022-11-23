@@ -1,0 +1,127 @@
+{
+  "name": "利率浮动信息",
+  "description": "显示产品基准利率，可设置浮动利率，回显浮动百分比及执行利率",
+  "children": [
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "是否计息",
+        "layoutData": 2,
+        "required": true,
+        "placeholder": "",
+        "options": [
+          { "label": "是", "value": "1" },
+          { "label": "否", "value": "2" }
+        ]
+      },
+      "inputControl": [{ "label": "默认是", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "利率类型",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": []
+      },
+      "inputControl": [{ "label": "源自利率类型定义，产品可定义利率类型取值范围", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "基准利率",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "人行公布的基准利率", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "行内利率",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "利率类型设置的数值，按百分比展示", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "layoutData": 2,
+      "component": "input",
+      "data": {
+        "label": "优惠值",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [
+        {
+          "label": "以确定的利率类型为基础，根据客户、机构、产品等利率优惠维度按一定的规则自动计算优惠值，显示结果为按百分点浮动",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "type": "widget",
+      "component": "select",
+      "data": {
+        "label": "浮动类型",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "options": [
+          { "label": "浮动百分点", "value": "1" },
+          { "label": "浮动百分比", "value": "2" },
+          { "label": "固定利率值", "value": "3" }
+        ]
+      },
+      "inputControl": [{ "label": "默认不浮动，可改", "value": 1 }]
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "浮动利率",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "浮动值",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": []
+    },
+    {
+      "type": "widget",
+      "component": "input",
+      "data": {
+        "label": "执行利率",
+        "layoutData": 2,
+        "required": false,
+        "placeholder": "",
+        "contentType": "text"
+      },
+      "inputControl": [{ "label": "存款账户生效利率，执行利率=行内利率+浮动利率", "value": 1 }]
+    }
+  ]
+}

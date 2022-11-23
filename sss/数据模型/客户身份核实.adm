@@ -1,0 +1,19 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "联网核查结果": {
+      "isArray": "false",
+      "type": ""
+    },
+    "人脸比对结果": {
+      "isArray": "false",
+      "type": ""
+    },
+    "核实结果": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

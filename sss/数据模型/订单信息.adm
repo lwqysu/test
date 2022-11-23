@@ -1,0 +1,23 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "订单环节": {
+      "isArray": "false",
+      "type": ""
+    },
+    "订单状态": {
+      "isArray": "false",
+      "type": ""
+    },
+    "环节处理结果": {
+      "isArray": "false",
+      "type": ""
+    },
+    "订单时长": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}

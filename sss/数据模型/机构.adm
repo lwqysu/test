@@ -1,0 +1,15 @@
+{
+  "caption": "",
+  "description": "",
+  "dataStructure": {
+    "机构号": {
+      "isArray": "false",
+      "type": ""
+    },
+    "机构名称": {
+      "isArray": "false",
+      "type": ""
+    }
+  },
+  "tags": {}
+}
